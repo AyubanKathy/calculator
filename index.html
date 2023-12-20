@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIMPLE CALCULATOR</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<center>
+	<div class="title">
+		<h1>SIMPLE CALCULATOR</h1>
+	</div>
+	<form name="calcu">	
+		<label for="fnum">Enter your first number:</label><br>
+		<input type="text" name="num1"><br><br>
+		<label for="snum">Enter your second number:</label><br>
+		<input type="text" name="num2"><br><br>
+		<input type="button" name="" value="Add(+)" onclick="add()"> &nbsp &nbsp
+		<input type="button" name="" value="Subtract(-)" onclick="sub()"><br><br>
+		<input type="button" name="" value="Multiply(*)" onclick="mult()"> &nbsp &nbsp
+		<input type="button" name="" value="Divide(/)" onclick="div()"><br><br>
+		<input type="text" name="result" readonly="result">
+		<input type="Reset" name="" value="Reset" id="Reset">
+	</form>
+
+	<script type="text/javascript">
+		function add()
+		{
+			num1=parseInt(calcu.num1.value);
+			num2=parseInt(calcu.num2.value);
+			result=num1+num2;
+			calcu.result.value=result;
+		}
+
+		function sub()
+		{
+			num1=parseInt(calcu.num1.value);
+			num2=parseInt(calcu.num2.value);
+			result=num1-num2;
+			calcu.result.value=result;
+		}
+
+		function mult()
+		{
+			num1=parseInt(calcu.num1.value);
+			num2=parseInt(calcu.num2.value);
+			result=num1*num2;
+			calcu.result.value=result;
+		}
+
+		function div()
+		{
+			num1=parseInt(calcu.num1.value);
+			num2=parseInt(calcu.num2.value);
+			result=num1/num2;
+			calcu.result.value=result;
+		}
+	</script>
+
+	</center>
+</body>
+</html>
